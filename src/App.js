@@ -1,11 +1,10 @@
-import { DatePicker } from "antd";
-import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <div className="App">
-      <h1> Antd Figma Practical </h1>
-      <DatePicker />
+    <div>
+      <RouterProvider router={AppRoutes} />
     </div>
   );
 }
