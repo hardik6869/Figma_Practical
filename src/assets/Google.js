@@ -1,5 +1,3 @@
-import React from "react";
-
 const Google = () => {
   return (
     <svg
@@ -11,7 +9,7 @@ const Google = () => {
     >
       <mask
         id="mask0_22_3084"
-        cssStyle="mask-type:luminance"
+        cssstyle="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
@@ -19,8 +17,8 @@ const Google = () => {
         height="16"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M15.814 6.54545H8.18605V9.63636H12.5767C12.1674 11.6 10.4558 12.7273 8.18605 12.7273C5.50698 12.7273 3.34884 10.6182 3.34884 8C3.34884 5.38182 5.50698 3.27273 8.18605 3.27273C9.33953 3.27273 10.3814 3.67273 11.2 4.32727L13.5814 2C12.1302 0.763636 10.2698 0 8.18605 0C3.64651 0 0 3.56364 0 8C0 12.4364 3.64651 16 8.18605 16C12.2791 16 16 13.0909 16 8C16 7.52727 15.9256 7.01818 15.814 6.54545Z"
           fill="white"
         />
@@ -33,7 +31,7 @@ const Google = () => {
       </g>
       <mask
         id="mask1_22_3084"
-        cssStyle="mask-type:luminance"
+        cssstyle="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
@@ -41,8 +39,8 @@ const Google = () => {
         height="16"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M15.814 6.54545H8.18605V9.63636H12.5767C12.1674 11.6 10.4558 12.7273 8.18605 12.7273C5.50698 12.7273 3.34884 10.6182 3.34884 8C3.34884 5.38182 5.50698 3.27273 8.18605 3.27273C9.33953 3.27273 10.3814 3.67273 11.2 4.32727L13.5814 2C12.1302 0.763636 10.2698 0 8.18605 0C3.64651 0 0 3.56364 0 8C0 12.4364 3.64651 16 8.18605 16C12.2791 16 16 13.0909 16 8C16 7.52727 15.9256 7.01818 15.814 6.54545Z"
           fill="white"
         />
@@ -55,7 +53,7 @@ const Google = () => {
       </g>
       <mask
         id="mask2_22_3084"
-        cssStyle="mask-type:luminance"
+        cssstyle="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
@@ -63,8 +61,8 @@ const Google = () => {
         height="16"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M15.814 6.54545H8.18605V9.63636H12.5767C12.1674 11.6 10.4558 12.7273 8.18605 12.7273C5.50698 12.7273 3.34884 10.6182 3.34884 8C3.34884 5.38182 5.50698 3.27273 8.18605 3.27273C9.33953 3.27273 10.3814 3.67273 11.2 4.32727L13.5814 2C12.1302 0.763636 10.2698 0 8.18605 0C3.64651 0 0 3.56364 0 8C0 12.4364 3.64651 16 8.18605 16C12.2791 16 16 13.0909 16 8C16 7.52727 15.9256 7.01818 15.814 6.54545Z"
           fill="white"
         />
@@ -77,7 +75,7 @@ const Google = () => {
       </g>
       <mask
         id="mask3_22_3084"
-        cssStyle="mask-type:luminance"
+        cssstyle="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
@@ -85,8 +83,8 @@ const Google = () => {
         height="16"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M15.814 6.54545H8.18605V9.63636H12.5767C12.1674 11.6 10.4558 12.7273 8.18605 12.7273C5.50698 12.7273 3.34884 10.6182 3.34884 8C3.34884 5.38182 5.50698 3.27273 8.18605 3.27273C9.33953 3.27273 10.3814 3.67273 11.2 4.32727L13.5814 2C12.1302 0.763636 10.2698 0 8.18605 0C3.64651 0 0 3.56364 0 8C0 12.4364 3.64651 16 8.18605 16C12.2791 16 16 13.0909 16 8C16 7.52727 15.9256 7.01818 15.814 6.54545Z"
           fill="white"
         />

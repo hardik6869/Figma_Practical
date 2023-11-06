@@ -6,7 +6,7 @@ import {
   CaDasLogoWrapper,
   FormField,
   GoogleLink,
-  SignUpWarpper,
+  SignInWarpper,
   Terms,
   TitleWrapper,
 } from "../Authentication.style";
@@ -15,7 +15,7 @@ import { Button, Checkbox, Form, Input, Progress } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import Google from "../../assets/Google";
 
-const SignUp = () => {
+const SignIn = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
@@ -42,10 +42,10 @@ const SignUp = () => {
       </CaDasLogoWrapper>
       <AuthBGWrapper>
         <AuthFormBG>
-          <SignUpWarpper>
+          <SignInWarpper>
             <TitleWrapper>
-              <h2>Getting Started</h2>
-              <p>Create an account to continue!</p>
+              <h2>Let’s Sign You In</h2>
+              <p>Welcome back, you’ve been missed!</p>
             </TitleWrapper>
 
             <Form>
@@ -54,13 +54,6 @@ const SignUp = () => {
                   placeholder="Your Email"
                   bordered={false}
                   autoComplete="email"
-                />
-              </FormField>
-              <FormField>
-                <Input
-                  placeholder="Your Name"
-                  bordered={false}
-                  autoComplete="name"
                 />
               </FormField>
               <FormField>
@@ -80,11 +73,9 @@ const SignUp = () => {
 
               <Terms>
                 <Checkbox>
-                  <span style={{ paddingLeft: "8px" }}>
-                    By creating an account, you agree to our{" "}
-                  </span>
+                  <span style={{ paddingLeft: "8px" }}>Remember me </span>
+                  <Link style={{ paddingLeft: "60px" }}>Forgot Password</Link>
                 </Checkbox>
-                <Link>Term and Conditions</Link>
               </Terms>
 
               <Button
@@ -92,7 +83,7 @@ const SignUp = () => {
                 type="primary"
                 onClick={() => navigate("/")}
               >
-                Register
+                Login
               </Button>
 
               <h4> OR </h4>
@@ -103,14 +94,14 @@ const SignUp = () => {
             </Form>
 
             <AnAccount>
-              Already have an account?
-              <Link onClick={() => navigate("/")}> Sign in </Link>
+              Don't have an account?{" "}
+              <Link onClick={() => navigate("/signup")}> Sign up </Link>
             </AnAccount>
-          </SignUpWarpper>
+          </SignInWarpper>
         </AuthFormBG>
       </AuthBGWrapper>
     </>
   );
 };
 
-export default SignUp;
+export default SignIn;

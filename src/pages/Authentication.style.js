@@ -3,7 +3,9 @@ import Images from "../Global/Images";
 
 export const CaDasLogoWrapper = styled.div`
   width: auto;
-  height: 15vh;
+  height: 20vh;
+  padding-top: 120px;
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,17 +18,18 @@ export const AuthBGWrapper = styled.div`
 `;
 
 export const AuthFormBG = styled.div`
-  width: 95%;
-  height: 85vh;
+  width: 90vw;
+  height: 80vh;
   flex-shrink: 0;
   background-image: url("${Images.authBG}");
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
 `;
 
-export const AuthFormWarpper = styled.div`
+export const SignUpWarpper = styled.div`
   width: 360px;
   height: 619px;
   background-color: lightblue;
@@ -34,6 +37,35 @@ export const AuthFormWarpper = styled.div`
   border-radius: 48px;
   background: var(--white-w-100, #fff);
   box-shadow: 80px 120px 504px 0px rgba(0, 0, 0, 0.16);
+  padding: 40px 32px;
+  .ant-btn-primary {
+    width: 296px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--blue-b-100, #0052cc);
+  }
+  h4 {
+    color: var(--gray-g-100, #8f92a1);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+`;
+
+export const SignInWarpper = styled.div`
+  width: 360px;
+  height: 525px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: var(--white-w-100, #fff);
+  box-shadow: 80px 120px 504px 0px rgba(0, 0, 0, 0.16);
+  position: absolute;
   padding: 40px 32px;
   .ant-btn-primary {
     width: 296px;
