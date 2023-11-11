@@ -11,7 +11,7 @@ import {
   TitleWrapper,
 } from "../Authentication.style";
 import Logo from "../../assets/Logo";
-import { Button, Checkbox, Form, Input, Progress } from "antd";
+import { Button, Checkbox, Col, Form, Input, Progress, Row } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import Google from "../../assets/Google";
 
@@ -72,10 +72,16 @@ const SignIn = () => {
               />
 
               <Terms>
-                <Checkbox>
-                  <span style={{ paddingLeft: "8px" }}>Remember me </span>
-                  <Link style={{ paddingLeft: "60px" }}>Forgot Password</Link>
-                </Checkbox>
+                <Row>
+                  <Col span={10}>
+                    <Checkbox>
+                      <span>Remember me </span>
+                    </Checkbox>
+                  </Col>
+                  <Col span={8} offset={6}>
+                    <Link>Forgot Password</Link>
+                  </Col>
+                </Row>
               </Terms>
 
               <Button

@@ -11,7 +11,7 @@ import {
   TitleWrapper,
 } from "../Authentication.style";
 import Logo from "../../assets/Logo";
-import { Button, Checkbox, Form, Input, Progress } from "antd";
+import { Button, Checkbox, Col, Form, Input, Progress, Row } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import Google from "../../assets/Google";
 
@@ -79,12 +79,16 @@ const SignUp = () => {
               />
 
               <Terms>
-                <Checkbox>
-                  <span style={{ paddingLeft: "8px" }}>
-                    By creating an account, you agree to our{" "}
-                  </span>
-                </Checkbox>
-                <Link>Term and Conditions</Link>
+                <Row>
+                  <Col span={22}>
+                    <Checkbox style={{ fill: "#DEEBFF", stroke: "#DEEBFF" }}>
+                      <span>By creating an account, you agree to our </span>
+                    </Checkbox>
+                  </Col>
+                  <Col span={11} offset={2}>
+                    <Link>Term and Conditions</Link>
+                  </Col>
+                </Row>
               </Terms>
 
               <Button

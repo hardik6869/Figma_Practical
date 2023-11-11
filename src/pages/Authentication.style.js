@@ -30,6 +30,7 @@ export const AuthFormBG = styled.div`
 `;
 
 export const SignUpWarpper = styled.div`
+  font-family: DM Sans;
   width: 360px;
   height: 619px;
   background-color: lightblue;
@@ -47,6 +48,7 @@ export const SignUpWarpper = styled.div`
   }
   h4 {
     color: var(--gray-g-100, #8f92a1);
+    font-family: DM Sans;
     text-align: center;
     font-size: 12px;
     font-style: normal;
@@ -59,6 +61,7 @@ export const SignUpWarpper = styled.div`
 `;
 
 export const SignInWarpper = styled.div`
+  font-family: DM Sans;
   width: 360px;
   height: 525px;
   flex-shrink: 0;
@@ -76,6 +79,7 @@ export const SignInWarpper = styled.div`
   }
   h4 {
     color: var(--gray-g-100, #8f92a1);
+    font-family: DM Sans;
     text-align: center;
     font-size: 12px;
     font-style: normal;
@@ -88,6 +92,7 @@ export const SignInWarpper = styled.div`
 `;
 
 export const GoogleLink = styled.div`
+  font-family: DM Sans;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,6 +110,7 @@ export const GoogleLink = styled.div`
 export const TitleWrapper = styled.div`
   h2 {
     color: var(--black-b-100, #171717);
+    font-family: DM Sans;
     text-align: center;
     font-size: 22px;
     font-style: normal;
@@ -114,6 +120,7 @@ export const TitleWrapper = styled.div`
   }
   p {
     color: var(--gray-g-100, #8f92a1);
+    font-family: DM Sans;
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -126,6 +133,7 @@ export const TitleWrapper = styled.div`
 export const FormField = styled.div`
   border-radius: 16px;
   background: var(--gray-g-05, rgba(143, 146, 161, 0.05));
+  font-family: DM Sans;
   width: 296px;
   flex-shrink: 0;
   padding: 11px 56px 11px 24px;
@@ -133,6 +141,7 @@ export const FormField = styled.div`
 
   .ant-input {
     color: var(--gray-g-100, #8f92a1);
+    font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -142,26 +151,41 @@ export const FormField = styled.div`
 `;
 
 export const Terms = styled.div`
-  text-align: left;
-  color: var(--gray-g-100, #8f92a1);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.2px;
-  margin: 24px 0;
+  padding: 24px 0;
+  span {
+    color: var(--gray-g-100, #8f92a1);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.2px;
+    Link {
+      color: var(--blue-b-100, #0052cc);
+      font-family: DM Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+    }
+  }
   a {
     color: var(--blue-b-100, #0052cc);
+    text-align: right;
+    font-family: DM Sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 15px;
-    letter-spacing: -0.2px;
-    padding-left: 33px;
+    line-height: 18px; /* 150% */
+    letter-spacing: -0.4px;
+    align-items: left;
   }
 `;
 
 export const AnAccount = styled.div`
   color: var(--gray-g-100, #8f92a1);
+  font-family: DM Sans;
   text-align: center;
   font-size: 13px;
   font-style: normal;
@@ -171,6 +195,7 @@ export const AnAccount = styled.div`
   padding-top: 16px;
   a {
     color: var(--blue-b-100, #0052cc);
+    font-family: DM Sans;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
