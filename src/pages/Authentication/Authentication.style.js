@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Images from "../Global/Images";
+import Images from "../../Global/Images";
 
 export const CaDasLogoWrapper = styled.div`
   width: auto;

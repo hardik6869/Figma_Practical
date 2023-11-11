@@ -9,7 +9,7 @@ import {
   SignUpWarpper,
   Terms,
   TitleWrapper,
-} from "../Authentication.style";
+} from "./Authentication.style";
 import Logo from "../../assets/Logo";
 import { Button, Checkbox, Col, Form, Input, Progress, Row } from "antd";
 import { Link, useNavigate } from "react-router-dom";
