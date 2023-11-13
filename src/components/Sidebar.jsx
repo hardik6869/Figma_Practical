@@ -10,16 +10,14 @@ import {
 } from "./sidebar.style";
 import { Avatar, Badge, Col, Menu, Row } from "antd";
 import { Link } from "react-router-dom";
-import {
-  AppstoreOutlined,
-  CheckSquareOutlined,
-  ClockCircleOutlined,
-  MessageOutlined,
-  PlusOutlined,
-  ScheduleOutlined,
-} from "@ant-design/icons";
+import { PlusOutlined } from "@ant-design/icons";
 import Logo from "../assets/Logo";
 import Images from "../Global/Images";
+import Dashboard from "../assets/Dashboard";
+import Message from "../assets/Message";
+import Project from "../assets/Project";
+import Schedule from "../assets/Schedule";
+import Activity from "../assets/Activity";
 function getItem(label, key, icon, children) {
   return {
     key,
@@ -31,11 +29,11 @@ function getItem(label, key, icon, children) {
 
 const Sidebar = () => {
   const items = [
-    getItem(<Link to="/dashboard">Dashboard</Link>, "1", <AppstoreOutlined />),
-    getItem(<Link to="/message">Message</Link>, "2", <MessageOutlined />),
-    getItem(<Link to="/project">Project</Link>, "3", <CheckSquareOutlined />),
-    getItem(<Link to="/schedule">Schedule</Link>, "4", <ScheduleOutlined />),
-    getItem(<Link to="/activity">Activity</Link>, "5", <ClockCircleOutlined />),
+    getItem(<Link to="/dashboard">Dashboard</Link>, "1", <Dashboard />),
+    getItem(<Link to="/message">Message</Link>, "2", <Message />),
+    getItem(<Link to="/project">Project</Link>, "3", <Project />),
+    getItem(<Link to="/schedule">Schedule</Link>, "4", <Schedule />),
+    getItem(<Link to="/activity">Activity</Link>, "5", <Activity />),
   ];
   return (
     <SidebarSider theme="light" width={250}>

@@ -6,9 +6,10 @@ export const OuterWrapper = styled.div`
   height: 100px;
   flex-shrink: 0;
   background: var(--white-w-100, #fff);
-  padding: 24px 22px;
+  padding: 24px 24px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const AuthUserName = styled.div`
