@@ -8,7 +8,12 @@ export const MyProjectsData = [
     attachement: 13,
     time: 5,
     progress: 80,
-    user: [Images.User1, "PR", "KI", Images.User3],
+    user: [
+      [Images.User1, ""],
+      ["PR", "#DE350B"],
+      ["KI", "#00875A"],
+      [Images.User3, ""],
+    ],
   },
   {
     id: 2,
@@ -17,7 +22,11 @@ export const MyProjectsData = [
     attachement: "5",
     time: 1,
     progress: 48,
-    user: ["L", "PR", Images.User3],
+    user: [
+      ["L", "#5243AA"],
+      ["PR", "#DE350B"],
+      [Images.User3, ""],
+    ],
   },
   {
     id: 3,
@@ -26,7 +35,12 @@ export const MyProjectsData = [
     attachement: "",
     time: 10,
     progress: 62,
-    user: [Images.User5, "PR", "A", Images.User1],
+    user: [
+      [Images.User5, ""],
+      ["PR", "#DE350B"],
+      ["A", "#FF991F"],
+      [Images.User1, ""],
+    ],
   },
   {
     id: 4,
@@ -35,7 +49,12 @@ export const MyProjectsData = [
     attachement: "7",
     time: 10,
     progress: 23,
-    user: [Images.User1, "PR", "KI", Images.User3],
+    user: [
+      [Images.User1, ""],
+      ["PR", "#DE350B"],
+      ["KI", "#00875A"],
+      [Images.User3, ""],
+    ],
   },
   {
     id: 5,
@@ -44,6 +63,12 @@ export const MyProjectsData = [
     attachement: "5",
     time: 1,
     progress: 77,
-    user: ["L", "PR", "KI", Images.User2, Images.User3, Images.User5],
+    user: [
+      ["L", "#5243AA"],
+      ["PR", "#DE350B"],
+      [Images.User2, ""],
+      [Images.User3, ""],
+      [Images.User5, ""],
+    ],
   },
 ];

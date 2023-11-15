@@ -87,7 +87,7 @@ const SignIn = () => {
               <Button
                 htmlType="submit"
                 type="primary"
-                onClick={() => navigate("/home")}
+                onClick={() => navigate("/dashboard")}
               >
                 Login
               </Button>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 // My Team
-
 export const MyTeamWrapper = styled.div`
   width: 100%;
   padding: 48px 50px;
@@ -115,8 +114,7 @@ export const AddTeamBtn = styled.div`
   }
 `;
 
-//My Projects
-
+// My Projects
 export const MyProjectsWrapper = styled.div`
   width: 100%;
   padding: 48px 50px;
@@ -155,6 +153,7 @@ export const ProjectSummary = styled.div`
   .ant-row {
     display: flex;
     align-items: center;
+    justify-content: left;
 
     label {
       border-radius: 8px;

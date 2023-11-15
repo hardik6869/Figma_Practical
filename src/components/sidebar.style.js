@@ -51,14 +51,30 @@ export const SidebarMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content: left;
+
     & a {
       text-decoration: none;
+      & .ant-menu-item-selected,
+      & .ant-menu-item-active,
+      & .ant-menu-item:active {
+        color: red;
+      }
     }
     & svg {
       display: block;
       margin-right: 16px;
       height: 24px;
       width: auto;
+    }
+  }
+  & .ant-menu-item-selected {
+    margin: 0;
+    color: var(--blue-b-100, #0052cc);
+    border-left: 4px solid #0052cc;
+    & svg {
+      path {
+        fill: var(--blue-b-100, #0052cc);
+      }
     }
   }
 `;
@@ -112,6 +128,7 @@ export const TeamProfile = styled.div`
   background: var(--gray-g-05, rgba(143, 146, 161, 0.05));
   font-feature-settings: "clig" off, "liga" off;
   padding: 16px 24px;
+  cursor: pointer;
   .ant-row {
     .ant-col {
       padding-left: 12px;

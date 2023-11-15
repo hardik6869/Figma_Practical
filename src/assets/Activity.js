@@ -1,6 +1,7 @@
 import React from "react";
 
-const Activity = () => {
+const Activity = (projectTime) => {
+  console.log(projectTime);
   return (
     <svg
       width="24"
@@ -13,7 +14,13 @@ const Activity = () => {
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 11V7H11V13H16V11H13Z"
-        fill="#8F92A1"
+        fill={
+          projectTime.time < 4
+            ? "var(--red-r-100, #DE350B)"
+            : projectTime.time < 7
+            ? "var(--yellow-y-100, #FF991F)"
+            : "#8F92A1"
+        }
       />
     </svg>
   );

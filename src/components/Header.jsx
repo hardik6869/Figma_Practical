@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AddProjectBtn,
   AuthUserName,
@@ -12,11 +12,32 @@ import Bell from "../assets/Bell";
 import Setting from "../assets/Setting";
 import Images from "../Global/Images";
 import { SearchOutlined } from "@ant-design/icons";
+import { useLocation } from "react-router-dom";
 
+const handleSelectedHeaderOnSidebar = (path) => {
+  switch (path) {
+    case "/dashboard":
+      return "👋 Hi Linh!";
+    case "/message":
+      return "💬 Message";
+    case "/project":
+      return "💼 Project";
+    default:
+      return "👋 Hi Linh!";
+  }
+};
 const Header = () => {
+  const location = useLocation();
+
+  const [selectedHeader, setSelectedHeader] = useState(() =>
+    handleSelectedHeaderOnSidebar(location.pathname)
+  );
+  useEffect(() => {
+    setSelectedHeader(() => handleSelectedHeaderOnSidebar(location.pathname));
+  }, [location.pathname]);
   return (
     <OuterWrapper>
-      <AuthUserName>👋 Hi Linh!</AuthUserName>
+      <AuthUserName>{selectedHeader}</AuthUserName>
       <SearchBar>
         <Input
           style={{

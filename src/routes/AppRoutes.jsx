@@ -4,6 +4,10 @@ import AuthLayout from "../Layout/AuthLayout";
 import SignIn from "../pages/Authentication/SignIn";
 import AppLayout from "../Layout/AppLayout";
 import Home from "../pages/Dashboard/Home";
+import Message from "../pages/Message/Message";
+import Project from "../pages/Project/Project";
+import Schedule from "../pages/Schedule/Schedule";
+import Activity from "../pages/Activity/Activity";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -15,7 +19,13 @@ const AppRoutes = createBrowserRouter([
   },
   {
     element: <AppLayout />,
-    children: [{ path: "/home", index: true, element: <Home /> }],
+    children: [
+      { path: "/dashboard", index: true, element: <Home /> },
+      { path: "/message", index: true, element: <Message /> },
+      { path: "/project", index: true, element: <Project /> },
+      { path: "/schedule", index: true, element: <Schedule /> },
+      { path: "/activity", index: true, element: <Activity /> },
+    ],
   },
 ]);
 

@@ -64,16 +64,36 @@ const MyProjects = () => {
                       <Attachments /> {project.attachement}
                     </label>
                   )}
-                  <label style={{}}>
-                    <Activity /> {project.time} days Lefts
+                  <label
+                    style={
+                      project.time < 4
+                        ? {
+                            color: "var(--red-r-100, #DE350B)",
+                            background: "#DE350B33",
+                          }
+                        : project.time < 7
+                        ? {
+                            color: "var(--yellow-y-100, #FF991F)",
+                            background: "#FF991F33",
+                          }
+                        : {}
+                    }
+                  >
+                    <Activity time={project.time} /> {project.time} days left
                   </label>
                 </Row>
 
-                <Progress percent={project.progress} size="small" />
+                <Progress
+                  percent={project.progress}
+                  size="small"
+                  style={{ fontWeight: "bold" }}
+                />
 
                 <UserIcon>
                   {project.user.map((item) => (
-                    <Avatar src={item}>{item}</Avatar>
+                    <Avatar src={item[0]} style={{ background: item[1] }}>
+                      {item[0]}
+                    </Avatar>
                   ))}
                 </UserIcon>
               </ProjectSummary>

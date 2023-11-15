@@ -29,7 +29,13 @@ function getItem(label, key, icon, children) {
 
 const Sidebar = () => {
   const items = [
-    getItem(<Link to="/dashboard">Dashboard</Link>, "1", <Dashboard />),
+    getItem(
+      <Link to="/dashboard" defaultValue={true}>
+        Dashboard
+      </Link>,
+      "1",
+      <Dashboard />
+    ),
     getItem(<Link to="/message">Message</Link>, "2", <Message />),
     getItem(<Link to="/project">Project</Link>, "3", <Project />),
     getItem(<Link to="/schedule">Schedule</Link>, "4", <Schedule />),
@@ -41,7 +47,12 @@ const Sidebar = () => {
         <Logo />
       </CaDasLogo>
       <SidebarMenu>
-        <Menu mode="inline" items={items} />
+        <Menu
+          defaultSelectedKeys={["1"]}
+          defaultOpenKeys={["sub1"]}
+          mode="inline"
+          items={items}
+        />
       </SidebarMenu>
       <SidebarBottom>
         <Teams>Teams</Teams>

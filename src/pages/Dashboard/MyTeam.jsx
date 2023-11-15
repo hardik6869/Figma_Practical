@@ -62,7 +62,9 @@ const MyTeam = () => {
 
                 <UserIcon>
                   {team.user.map((item) => (
-                    <Avatar src={item}>{item}</Avatar>
+                    <Avatar src={item[0]} style={{ background: item[1] }}>
+                      {item[0]}
+                    </Avatar>
                   ))}
                 </UserIcon>
               </TeamProfile>
