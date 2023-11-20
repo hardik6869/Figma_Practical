@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+// Dashboard
+export const DashboardWrapper = styled.div`
+  background-color: #fff;
+  width: 100%;
+`;
+
 // My Team
 export const MyTeamWrapper = styled.div`
   width: 100%;
@@ -133,14 +139,10 @@ export const ProjectSummary = styled.div`
   margin: 16px 0;
   border-radius: 16px;
   background: var(--white-w-100, #fff);
-  font-feature-settings: "clig" off, "liga" off;
   padding: 24px;
 
   p {
     color: var(--gray-g-100, #8f92a1);
-    font-feature-settings: "clig" off, "liga" off;
-
-    /* Regular/Title Small */
     font-family: DM Sans;
     font-size: 12px;
     font-style: normal;
@@ -158,7 +160,6 @@ export const ProjectSummary = styled.div`
     label {
       border-radius: 8px;
       background: var(--gray-g-20, rgba(143, 146, 161, 0.2));
-
       display: flex;
       padding: 2px 8px;
       flex-direction: row;
