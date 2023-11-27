@@ -3,14 +3,12 @@ import {
   AnAccount,
   AuthBGWrapper,
   AuthFormBG,
-  CaDasLogoWrapper,
   FormField,
   GoogleLink,
   SignInWarpper,
   Terms,
   TitleWrapper,
 } from "./Authentication.style";
-import Logo from "../../assets/Logo";
 import { Button, Checkbox, Col, Form, Input, Progress, Row } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import Google from "../../assets/Google";
@@ -36,77 +34,72 @@ const SignIn = () => {
     return hasUpperCase ? 1 : 0;
   };
   return (
-    <>
-      <CaDasLogoWrapper>
-        <Logo />
-      </CaDasLogoWrapper>
-      <AuthBGWrapper>
-        <AuthFormBG>
-          <SignInWarpper>
-            <TitleWrapper>
-              <h2>Let’s Sign You In</h2>
-              <p>Welcome back, you’ve been missed!</p>
-            </TitleWrapper>
+    <AuthBGWrapper>
+      <AuthFormBG>
+        <SignInWarpper>
+          <TitleWrapper>
+            <h2>Let’s Sign You In</h2>
+            <p>Welcome back, you’ve been missed!</p>
+          </TitleWrapper>
 
-            <Form>
-              <FormField>
-                <Input
-                  placeholder="Your Email"
-                  bordered={false}
-                  autoComplete="email"
-                />
-              </FormField>
-              <FormField>
-                <Input.Password
-                  placeholder="Create Password"
-                  bordered={false}
-                  onChange={handlePasswordChange}
-                  autoComplete="create-password"
-                />
-              </FormField>
-              <Progress
-                percent={getPasswordStrength()}
-                showInfo={false}
-                steps={6}
-                size={[40, 5]}
+          <Form>
+            <FormField>
+              <Input
+                placeholder="Your Email"
+                bordered={false}
+                autoComplete="email"
               />
+            </FormField>
+            <FormField>
+              <Input.Password
+                placeholder="Create Password"
+                bordered={false}
+                onChange={handlePasswordChange}
+                autoComplete="create-password"
+              />
+            </FormField>
+            <Progress
+              percent={getPasswordStrength()}
+              showInfo={false}
+              steps={6}
+              size={[40, 5]}
+            />
 
-              <Terms>
-                <Row>
-                  <Col span={10}>
-                    <Checkbox>
-                      <span>Remember me </span>
-                    </Checkbox>
-                  </Col>
-                  <Col span={8} offset={6}>
-                    <Link>Forgot Password</Link>
-                  </Col>
-                </Row>
-              </Terms>
+            <Terms>
+              <Row>
+                <Col span={10}>
+                  <Checkbox>
+                    <span>Remember me </span>
+                  </Checkbox>
+                </Col>
+                <Col span={8} offset={6}>
+                  <Link>Forgot Password</Link>
+                </Col>
+              </Row>
+            </Terms>
 
-              <Button
-                htmlType="submit"
-                type="primary"
-                onClick={() => navigate("/dashboard")}
-              >
-                Login
-              </Button>
+            <Button
+              htmlType="submit"
+              type="primary"
+              onClick={() => navigate("/dashboard")}
+            >
+              Login
+            </Button>
 
-              <h4> OR </h4>
+            <h4> OR </h4>
 
-              <GoogleLink>
-                <Google /> <span> Continue with Google </span>
-              </GoogleLink>
-            </Form>
+            <GoogleLink>
+              <Google /> <span> Continue with Google </span>
+            </GoogleLink>
+          </Form>
 
-            <AnAccount>
-              Don't have an account?{" "}
-              <Link onClick={() => navigate("/signup")}> Sign up </Link>
-            </AnAccount>
-          </SignInWarpper>
-        </AuthFormBG>
-      </AuthBGWrapper>
-    </>
+          <AnAccount>
+            Don't have an account?{" "}
+            <Link onClick={() => navigate("/signup")}> Sign up </Link>
+          </AnAccount>
+        </SignInWarpper>
+      </AuthFormBG>
+    </AuthBGWrapper>
   );
 };
 

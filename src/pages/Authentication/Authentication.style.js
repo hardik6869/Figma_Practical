@@ -3,23 +3,29 @@ import Images from "../../Global/Images";
 
 export const CaDasLogoWrapper = styled.div`
   width: auto;
-  height: 20vh;
-  padding-top: 120px;
-  padding-bottom: 30px;
+  height: 15vh;
+  padding-top: 70px;
+  padding-bottom: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+  svg {
+    width: 154px;
+    height: 32px;
+  }
 `;
 
 export const AuthBGWrapper = styled.div`
+  height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
 `;
 
 export const AuthFormBG = styled.div`
-  width: 90vw;
-  height: 80vh;
+  width: 100vw;
+  height: 85vh;
   flex-shrink: 0;
   background-image: url("${Images.authBG}");
   background-size: 100% 100%;
