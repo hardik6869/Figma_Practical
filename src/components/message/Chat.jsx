@@ -45,41 +45,6 @@ const Chat = () => {
       to: "",
       SendImage: Images.SendImages,
     },
-    {
-      id: 5,
-      FromImage: "",
-      from: "",
-      to: "",
-      SendImage: Images.SendImages,
-    },
-    {
-      id: 5,
-      FromImage: "",
-      from: "",
-      to: "",
-      SendImage: Images.SendImages,
-    },
-    {
-      id: 5,
-      FromImage: "",
-      from: "",
-      to: "",
-      SendImage: Images.SendImages,
-    },
-    {
-      id: 5,
-      FromImage: "",
-      from: "",
-      to: "",
-      SendImage: Images.SendImages,
-    },
-    {
-      id: 5,
-      FromImage: "",
-      from: "",
-      to: "",
-      SendImage: Images.SendImages,
-    },
   ];
 
   return (
