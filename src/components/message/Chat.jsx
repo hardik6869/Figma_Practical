@@ -45,43 +45,80 @@ const Chat = () => {
       to: "",
       SendImage: Images.SendImages,
     },
+    {
+      id: 5,
+      FromImage: "",
+      from: "",
+      to: "",
+      SendImage: Images.SendImages,
+    },
+    {
+      id: 5,
+      FromImage: "",
+      from: "",
+      to: "",
+      SendImage: Images.SendImages,
+    },
+    {
+      id: 5,
+      FromImage: "",
+      from: "",
+      to: "",
+      SendImage: Images.SendImages,
+    },
+    {
+      id: 5,
+      FromImage: "",
+      from: "",
+      to: "",
+      SendImage: Images.SendImages,
+    },
+    {
+      id: 5,
+      FromImage: "",
+      from: "",
+      to: "",
+      SendImage: Images.SendImages,
+    },
   ];
 
   return (
-    <MainChatWrapper>
-      <DateLabel>09:24, Monday</DateLabel>
+    <>
+      <MainChatWrapper>
+        <DateLabel>09:24, Monday</DateLabel>
 
-      {Message.map((message) => (
-        <>
-          {message.from ? (
-            <ChatFrom>
-              {message.FromImage ? (
-                <Avatar src={message.FromImage} size={40} />
-              ) : (
-                <span> </span>
-              )}
+        {Message.map((message) => (
+          <>
+            {message.from ? (
+              <ChatFrom>
+                {message.FromImage ? (
+                  <Avatar src={message.FromImage} size={40} />
+                ) : (
+                  <span> </span>
+                )}
 
-              <ChatMessage>
-                <label> {message.from} </label>
-              </ChatMessage>
-            </ChatFrom>
-          ) : (
-            <ChatTo>
-              {message.to && (
                 <ChatMessage>
-                  <label> {message.to}</label>
+                  <label> {message.from} </label>
                 </ChatMessage>
-              )}
-              {message.SendImage && (
-                <>
-                  <Image src={message.SendImage} preview={false} />
-                  <Avatar src={<Download />} shape="square" />
-                </>
-              )}
-            </ChatTo>
-          )}
-        </>
-      ))}
+              </ChatFrom>
+            ) : (
+              <ChatTo>
+                {message.to && (
+                  <ChatMessage>
+                    <label> {message.to}</label>
+                  </ChatMessage>
+                )}
+                {message.SendImage && (
+                  <>
+                    <Image src={message.SendImage} preview={false} />
+                    <Avatar src={<Download />} shape="square" />
+                  </>
+                )}
+              </ChatTo>
+            )}
+          </>
+        ))}
+      </MainChatWrapper>
       <ChatField>
         <ChatInputField>
           <Avatar src={Images.Avatar1} />
@@ -90,7 +127,7 @@ const Chat = () => {
           <Attachments />
         </ChatInputField>
       </ChatField>
-    </MainChatWrapper>
+    </>
   );
 };
 

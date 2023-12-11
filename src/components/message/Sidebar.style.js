@@ -4,10 +4,7 @@ import Sider from "antd/es/layout/Sider";
 
 export const SidebarSider = styled(Sider)`
   & > div {
-    border-right-color: #fff;
     background-color: #fff;
-    border-right-width: 1px;
-    border-right-style: solid;
     min-height: 828px;
     width: 314px;
     display: flex;
@@ -20,8 +17,6 @@ export const SidebarSider = styled(Sider)`
 `;
 
 export const InnerSidebar = styled.div`
-  margin: 0px 32px 32px;
-  margin-top: 20px;
   flex: 1 1 auto;
   overflow: hidden;
 `;
@@ -31,7 +26,7 @@ export const SidebarHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-  margin: 40px 0px 16px;
+  margin: 40px 32px 16px 32px;
   span {
     color: var(--gray-g-100, #8f92a1);
     font-feature-settings: "clig" off, "liga" off;
@@ -53,7 +48,8 @@ export const SidebarHeader = styled.div`
 
 export const UserSidebar = styled.div`
   flex: 1 1 auto;
-  padding: 8px 16px;
+  margin: 8px 32px;
+  padding: 8px 22px 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,12 +106,12 @@ export const ActiveDotSign = styled.div`
 `;
 
 export const UserGroups = styled.div`
-  width: 250px;
   height: 40px;
   .ant-row {
     border-radius: 16px;
     background: var(--white-w-100, #fff);
-    padding: 8px 20px 8px 20px;
+    margin: 8px 32px;
+    padding: 8px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,12 +4,13 @@ import { Content } from "antd/es/layout/layout";
 export const MainChatWrapper = styled(Content)`
   width: 100%;
   padding: 24px 24px 32px;
+  height: 600px;
+  overflow-y: scroll;
 `;
 
 export const DateLabel = styled.div`
   color: var(--gray-g-100, #8f92a1);
   text-align: center;
-
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
@@ -56,6 +57,7 @@ export const ChatTo = styled.div`
   align-items: center;
   justify-content: right;
   position: relative;
+  padding: 14px 16px;
   & .ant-image {
     width: 320px;
     height: 240px;
@@ -71,7 +73,7 @@ export const ChatTo = styled.div`
 
 export const ChatField = styled.div`
   flex: 0 0 auto;
-  padding: 48px 0 0 0;
+  padding: 12px 24px 12px 24px;
 `;
 
 export const ChatInputField = styled.div`
